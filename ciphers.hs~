@@ -1,7 +1,0 @@
-main = putStrLn <- askUserForKey
-	
-
-askUserForKey :: IO String
-askUserForKey = do
-	putStrLn "Please enter Key:"
-	return getLine
