@@ -1,8 +1,10 @@
+import Data.Char (chr)
+
 type Rotor = [(Int,Int)]
 type RotorArray = [Rotor]
 type Key = [Int]
 
-charRotor = ['a'..'z'] ++ ['A'..'Z'] ++ ['0'..'9'] ++ [' ']
+charRotor = [chr x |x<-[0..127]]
 
 charLimit = length charRotor - 1
 
